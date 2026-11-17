@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>匠ストア | 工具・金物のオンラインショップ</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="top">工具・金物用品をお探しなら、匠ストアへ</div>
+    <header><a class="brand" href="#">匠ストア <small>TOOLS & HARDWARE</small></a>
+        <form id="searchForm"><input id="searchInput" placeholder="商品名・キーワードで検索"><button>検索</button></form>
+        <button class="cart" id="cartButton">カート <b id="cartCount">0</b></button>
+    </header>
+    <nav><a href="#products">商品一覧</a><a href="#categories">カテゴリー</a><a href="#about">ショップについて</a><a
+            href="#contact">お問い合わせ</a></nav>
+    <main>
+        <section class="hero">
+            <div><small class="eyebrow">TOOLS FOR EVERY PROJECT</small>
+                <h1>仕事にも、DIYにも。<br>頼れる道具を、ここから。</h1>
+                <p>電動工具・手工具・作業用品など、ものづくりを支えるアイテムを揃えたオンラインショップです。</p><a class="cta" href="#products">商品を見る　→</a>
+            </div>
+            <div class="hero-img"><img src="assets/images/hero.jpg" alt="匠ストアのメイン画像"></div>
+        </section>
+        <section class="features"><span>01　選びやすいカテゴリー</span><span>02　分かりやすい商品情報</span><span>03　シンプルな操作</span></section>
+        <section id="categories">
+            <div class="heading">
+                <div><small class="eyebrow">CATEGORIES</small>
+                    <h2>カテゴリーから探す</h2>
+                </div>
+            </div>
+            <div class="cats"><button class="active" data-category="all">すべての商品</button><button
+                    data-category="power">電動工具</button><button data-category="hand">手工具</button><button
+                    data-category="safety">作業用品・安全用品</button></div>
+        </section>
+        <section id="products">
+            <div class="heading">
+                <div><small class="eyebrow">OUR PRODUCTS</small>
+                    <h2>おすすめ商品</h2>
+                </div>
+                <div class="sort"><span id="resultCount">商品 6 件</span><select id="sortSelect">
+                        <option value="default">おすすめ順</option>
+                        <option value="low">価格が安い順</option>
+                        <option value="high">価格が高い順</option>
+                    </select></div>
+            </div>
+            <div class="grid" id="productGrid">
+                <article class="product" data-id="1" data-category="power" data-name="充電式インパクトドライバー">
+                    <div class="photo"><img src="assets/images/product-01.jpg" alt="商品画像 1"></div>
+                    <div class="info"><label>電動工具</label>
+                        <h3>充電式インパクトドライバー</h3>
+                        <p>組み立て・取り付け作業に便利な充電式モデル。</p>
+                        <div><b>¥12,800</b><button class="add">カートに追加</button></div>
+                    </div>
+                </article>
+                <article class="product" data-id="2" data-category="hand" data-name="ラチェットレンチセット">
+                    <div class="photo"><img src="assets/images/product-02.jpg" alt="商品画像 2"></div>
+                    <div class="info"><label>手工具</label>
+                        <h3>ラチェットレンチセット</h3>
+                        <p>さまざまなサイズに対応する基本セット。</p>
+                        <div><b>¥4,980</b><button class="add">カートに追加</button></div>
+                    </div>
+                </article>
+                <article class="product" data-id="3" data-category="power" data-name="電動丸のこ">
+                    <div class="photo"><img src="assets/images/product-03.jpg" alt="商品画像 3"></div>
+                    <div class="info"><label>電動工具</label>
+                        <h3>電動丸のこ</h3>
+                        <p>木材の切断作業に使う電動工具。</p>
+                        <div><b>¥9,600</b><button class="add">カートに追加</button></div>
+                    </div>
+                </article>
+                <article class="product" data-id="4" data-category="hand" data-name="ドライバー6本セット">
+                    <div class="photo"><img src="assets/images/product-04.jpg" alt="商品画像 4"></div>
+                    <div class="info"><label>手工具</label>
+                        <h3>ドライバー6本セット</h3>
+                        <p>日常の修理や組み立てに使えるセット。</p>
+                        <div><b>¥1,480</b><button class="add">カートに追加</button></div>
+                    </div>
+                </article>
+                <article class="product" data-id="5" data-category="safety" data-name="作業用保護手袋">
+                    <div class="photo"><img src="assets/images/product-05.jpg" alt="商品画像 5"></div>
+                    <div class="info"><label>作業用品・安全用品</label>
+                        <h3>作業用保護手袋</h3>
+                        <p>作業時の手を保護するベーシックタイプ。</p>
+                        <div><b>¥780</b><button class="add">カートに追加</button></div>
+                    </div>
+                </article>
+                <article class="product" data-id="6" data-category="safety" data-name="保護メガネ">
+                    <div class="photo"><img src="assets/images/product-06.jpg" alt="商品画像 6"></div>
+                    <div class="info"><label>作業用品・安全用品</label>
+                        <h3>保護メガネ</h3>
+                        <p>作業中の目を守るための保護具。</p>
+                        <div><b>¥1,200</b><button class="add">カートに追加</button></div>
+                    </div>
+                </article>
+            </div>
+            <p id="empty" hidden>該当する商品がありません。</p>
+        </section>
+        <section class="about" id="about"><small class="eyebrow">ABOUT TAKUMI STORE</small>
+            <h2>道具選びを、もっと分かりやすく。</h2>
+            <p>匠ストアは、工具や金物用品を探す人のためのショップサイトのサンプルです。商品情報やカテゴリーを整理し、目的の商品を見つけやすい構成を目指しています。</p>
+        </section>
+        <section class="contact" id="contact">
+            <div><small class="eyebrow">CONTACT</small>
+                <h2>商品についてのご質問</h2>
+                <p>お問い合わせフォームは今後の開発項目です。</p>
+            </div><a href="mailto:info@example.com">お問い合わせ →</a>
+        </section>
+    </main>
+    <footer><b>匠ストア</b><span>© 2026 匠ストア — Portfolio Demo
+            Project</span><small>※掲載商品・価格・説明はデモ用のサンプルです。実際の販売は行っていません。</small></footer>
+    <div id="toast"></div>
+</body>
+
+</html>
